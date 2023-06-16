@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+a {
+  color: #666;
+  font-size: 14px;
+  display: block;
+}
+.login_title {
+  text-align: center;
+}
+#login_page {
+  display: flex;
+}
+.notice {
+  font-size: 13px;
+  text-align: center;
+  color: #666;
+margin-top: 28px;
+}
+.main_login {
+  width: 30%;
+  height: 100vh;
+  background: #FFF;
+  padding: 70px;
+}
+.main_login a {
+  margin-top: 25px;
+  text-align: center;
+}
+.form_login {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+}
+.form_login label {
+  text-align: left;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 20px;
+  display: block;
+  color: #666;
+}
+.input_email,
+.input_password {
+  width: 100%;
+  background: #ededed;
+  border-radius: 25px;
+  margin: 4px 0 10px 0;
+  padding: 10px;
+  display: flex;
+}
+.icon {
+  padding: 4px;
+  color: #666;
+  min-width: 30px;
+  text-align: center;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 4px 0;
+  outline: none;
+}
+button[type="submit"] {
+  width: 100%;
+  border: 0;
+  border-radius: 25px;
+  padding: 14px;
+  background: #008552;
+  color: #FFF;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: ease all 0.3s;
+}
+button[type="submit"]:hover {
+  opacity: 0.9;
+}
+.left_background {
+  width: 70%;
+  padding: 40px;
+  height: 100vh;
+  background-image: url("images/friends.jpg");
+  /* background: linear-gradient(60deg,rgba(113, 9, 183, 0.87),rgba(2, 2, 2, 0.87),rgba(15, 211, 80, 0.87), rgba(236, 20, 20, 0.87), rgba(43, 13, 164, 0.7)), url('https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg') center no-repeat; */
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: row;
+}
+.left_background h1 {
+  max-width: 420px;
+  color: #FFF;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+.left_background p {
+  max-width: 650px;
+  color: #1a1a1a;
+  font-size: 15px;
+  text-align: right;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+.created {
+  margin-top: 40px;
+  text-align: center;
+}
+.created p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #008552;
+}
+.created a {
+  color: #666;
+  font-weight: normal;
+  text-decoration: none;
+  margin-top: 0;
+}
+.checkbox{
+  margin: 16px;
+}
+
+.checkbox label {
+  display: inline;
+  margin: 0px;
+  
+}
+.logo_final{
+            margin: -47px 0px 15px 95px;
+            width: 125px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="login_page">
+        <div class="main_login">
+
+          <img src="images/logo_final.png" alt="" class="logo_final">
+          
+          <h2 class="login_title">Login</h2>
+          <p class="notice">Please login to access the system</p>
+          <form class="form_login">
+            <label for="email">E-mail</label>
+            <div class="input_email">
+              <i class="fas fa-envelope icon"></i>
+              <input type="email" name="email" placeholder="Enter your E-mail" required>
+            </div>
+            <label for="password">Password</label>
+            <div class="input_password">
+              <i class="fas fa-lock icon"></i>
+              <input type="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="checkbox">
+              <label for="remember">
+                <input type="checkbox" name="remember">
+                Remember me
+              </label>
+            </div>
+            <button type="submit"><i class="fas fa-door-open"></i> Log in</button>
+          </form>
+            <a href="forget_password.html" class="forget_p">Forgot your password?</a>
+            <a href="signuppage.html" class="forget_p">Register</a>
+          <div class="created">
+            <p>welcome <a href="try.html">In Linkup</a></p>
+          </div>
+        </div>
+        <div class="left_background">
+          <h1>"There is nothing better than a friend, unless it is a friend with chocolate."</h1>
+        </div>
+      </div>
+</body>
+</html>

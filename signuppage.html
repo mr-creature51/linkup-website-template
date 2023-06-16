@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0df60fe861.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        a {
+            color: #666;
+            font-size: 14px;
+            display: block;
+        }
+
+        .login_title {
+            text-align: center;
+        }
+
+        #login_page {
+            display: flex;
+        }
+
+        .notice {
+            font-size: 13px;
+            text-align: center;
+            color: #666;
+            margin-top: 24px;
+        }
+
+        .main_login {
+            width: 30%;
+            height: 100vh;
+            background: #FFF;
+            padding: 70px;
+        }
+
+        .main_login a {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .form_login {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+        }
+
+        .form_login label {
+            text-align: left;
+            font-size: 13px;
+            margin-top: 10px;
+            margin-left: 20px;
+            display: block;
+            color: #666;
+        }
+
+        .input_email,
+        .input_password {
+            width: 100%;
+            background: #ededed;
+            border-radius: 25px;
+            margin: 4px 0 10px 0;
+            padding: 10px;
+            display: flex;
+        }
+
+        .icon {
+            padding: 4px;
+            color: #666;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            border: 0;
+            background: none;
+            font-size: 16px;
+            padding: 4px 0;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            border: 0;
+            border-radius: 25px;
+            padding: 14px;
+            background: #008552;
+            color: #FFF;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: ease all 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            opacity: 0.9;
+        }
+
+
+        .left_background {
+            background-image: url("images/love1.jpg");
+            /* background: linear-gradient(60deg, rgba(70, 232, 244, 0.87), rgba(23, 26, 14, 0.7)), url('https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg') center no-repeat;; */
+            width: 70%;
+            padding: 40px;
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: flex-end;
+            align-content: center;
+            flex-direction: row;
+        }
+
+        .left_background h1 {
+            max-width: 420px;
+            color: #FFF;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+        }
+
+        .left_background p {
+            max-width: 650px;
+            color: #1a1a1a;
+            font-size: 15px;
+            text-align: right;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+
+        .created {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .created p {
+            font-size: 13px;
+            font-weight: bold;
+            color: #008552;
+        }
+
+        .created a {
+            color: #666;
+            font-weight: normal;
+            text-decoration: none;
+            margin-top: 0;
+        }
+
+        .checkbox label {
+            display: inline;
+            margin: 0;
+        }
+
+        /* social medi address */
+        .other_contacts {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+        }
+        .footer_icon{
+            display: flex;
+            margin-left: 59px;
+        }
+
+        .other_contacts h3 {
+            text-transform: capitalize;
+            color: #a0a0a0;
+            font-size: 20px;
+            letter-spacing: .3px;
+            font-weight: 400;
+            font-family: Arial, sans-serif, serif;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .other_contacts h3:before,
+        h3:after {
+            border: .5px solid;
+            flex: 1 0 20px;
+            content: '';
+            margin: 0 20px 0 20px;
+        }
+
+        .other_contacts a i {
+            font-size: 23px;
+            margin: 0 10px;
+            color: #a0a0a0ba;
+            transition: all .4s;
+        }
+
+        .other_contacts a i:hover {
+            color: green;
+        }
+        /* here we put logo style */
+        .logo_final{
+            margin: -47px 0px 15px 95px;
+            width: 125px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login_page">
+        <div class="main_login">
+            <img src="images/logo_final.png" alt="" class="logo_final">
+            <h2 class="login_title">Sign up</h2>
+            <p class="notice">Please signup to access the system</p>
+            <form class="form_login">
+
+                <label for="email">Name</label>
+                <div class="input_email">
+                    <i class="fa-brands fa-galactic-senate icon"></i>
+                    <input type="email" name="email" placeholder="Enter your Name" required>
+                </div>
+                <!-- name and email class is same only name change in name section both have same class in style tag -->
+
+                <label for="email">E-mail</label>
+                <div class="input_email">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="email" name="email" placeholder="Enter your E-mail" required>
+                </div>
+
+                <label for="password">Password</label>
+                <div class="input_password">
+                    <i class="fas fa-lock icon"></i>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="checkbox">
+                    <label for="remember">
+                        <input type="checkbox" name="remember">
+                        Remember me
+                    </label>
+                </div>
+                <button type="submit"><i class="fas fa-door-open"></i> Sign in</button>
+
+
+                <div class="other_contacts">
+                    <h3>or connect with</h3>
+                    <div class="footer_icon">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i id="insta" class="fa-brands fa-instagram icon" style="margin-top: -4px;"></i></a>
+                        
+                    </div>
+                    
+                </div>
+
+            </form>
+
+        </div>
+        <div class="left_background">
+            <h1>“Once I knew you I never wanted to know anyone else.”</h1>
+        </div>
+    </div>
+</body>
+
+</html>
